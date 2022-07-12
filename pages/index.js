@@ -29,6 +29,11 @@ export default function Home({ allPostsData }) {
           .)
         </p>
       </section>
+      <section>
+        <Link href={'/form'}>
+          <a className={utilscss.headingMd}>Test javascript form</a>
+        </Link>
+      </section>
       <section className={`${utilscss.headingMd} ${utilscss.padding1px}`}>
         <h2 className={utilscss.headingLg}>Blog</h2>
         <ul className={utilscss.list}>
