@@ -1,0 +1,9 @@
+$primary-color: #1f5bde;
+$lighttext: #666;
+$font: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
+  Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+:export {
+  primaryColor: $primary-color;
+  lighttext: $lighttext;
+}

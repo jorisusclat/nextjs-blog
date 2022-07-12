@@ -25,7 +25,8 @@ export default async function handler(req, res) {
 
   // Rest of the API logic
   if (req.method === 'GET') {
-    res.status(200).json({ text: 'Hello' });
+    console.log('hello');
+    res.status(200).json({ text: 'Hello world' });
   } else {
     // Handle any other HTTP method
   }
