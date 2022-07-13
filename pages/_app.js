@@ -1,4 +1,5 @@
 import '../scss/global.scss';
+import ErrorBoundary from '../components/ErrorBoundary'
 
 /* 
 Persisting layout between page changes
@@ -9,5 +10,9 @@ Add global CSS
 */
 
 export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+  return (
+    <ErrorBoundary>
+      <Component {...pageProps} />
+    </ErrorBoundary>
+  )
 }

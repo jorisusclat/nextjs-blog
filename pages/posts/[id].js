@@ -6,6 +6,7 @@ import utilscss from '../../scss/utils.module.scss';
 
 export async function getStaticProps({ params }) {
   const postData = await getPostData(params.id);
+
   return {
     props: {
       postData,
