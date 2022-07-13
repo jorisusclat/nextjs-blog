@@ -6,7 +6,6 @@ import utilscss from '../../scss/utils.module.scss';
 
 export async function getStaticProps({ params }) {
   const postData = await getPostData(params.id);
-
   return {
     props: {
       postData,
@@ -15,10 +14,10 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-  const paths = getAllPostIds();
+  const paths = await getAllPostIds();
   return {
     paths,
-    fallback: false,
+    fallback: true,
   };
 }
 
