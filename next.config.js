@@ -7,11 +7,5 @@ module.exports = {
   i18n: {
     locales: ['en-US', 'fr'],
     defaultLocale: 'en-US',
-    domains: [
-      {
-        domain: 'nextjs-blog-liart-iota.vercel.app',
-        defaultLocale: 'en-US',
-      },
-    ],
   },
 };
